@@ -1,0 +1,1572 @@
+[
+
+{
+    "id": "p000001",
+    "title": "3-Ingredient Baked Ham and Cheese Rollups",
+    "author": "GEORGIA",
+    "photo": "http://www.thecomfortofcooking.com/wp-content/uploads/2014/05/3-IngredientBaked-HamandCheeseRollups-3.jpg",
+    "url": [
+    	"http://www.thecomfortofcooking.com/2014/05/3-ingredient-baked-ham-and-cheese-rollups.html",
+    	"http://www.foodnetwork.com/recipes/bobby-flay/pizza-dough-recipe.html"
+    ],
+    "likes": [],
+    "serving": "8 slices",
+    "time": {
+    	"prepare": "20 min",
+    	"inactive": "1 hr 20 min",
+    	"cook": "50 mins",
+    	"total": "2 hr 30 min" 
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"pizza dough": [
+	  			"Combine the bread flour, sugar, yeast and kosher salt in the bowl of a stand mixer and combine. While the mixer is running, add the water and 2 tablespoons of the oil and beat until the dough forms into a ball. If the dough is sticky, add additional flour, 1 tablespoon at a time, until the dough comes together in a solid ball. If the dough is too dry, add additional water, 1 tablespoon at a time. Scrape the dough onto a lightly floured surface and gently knead into a smooth, firm ball.",
+				"Grease a large bowl with the remaining 2 teaspoons olive oil, add the dough, cover the bowl with plastic wrap and put it in a warm area to let it double in size, about 1 hour. Turn the dough out onto a lightly floured surface and divide it into 2 equal pieces. Cover each with a clean kitchen towel or plastic wrap and let them rest for 10 minutes."
+			],
+			"whole": [
+		  		"Preheat oven to 400 degrees F. Roll out pizza dough on a lightly floured surface. Press to form a 12 x 8-inch rectangle.",
+				"Arrange ham slices evenly over dough to within 1/2 inch of edges. Sprinkle evenly with cheese. Starting at one of the short ends, roll up dough to form log. Pinch seam together to seal. Place, seam side down, on a greased baking sheet.",
+				"Bake for 50 minutes, or until deep golden brown. Let stand 10 minutes before cutting into 8 slices with a serrated knife.",
+				"Serve with mustard or horseradish sauce, if desired."
+			]
+	  	},
+		"video": {
+			"pizza dough": "http://www.foodnetwork.com/videos/bobbys-pizza-dough-recipe-0170075.embed.html"
+		}
+    },
+    "elements": {
+    	"pizza dough": [
+    		{
+		 		"name": "bread flour", "unit": "oz", "amount": "3 1/2 to 4", "id": "e000008", "optional": 0, "addi": "plus more for rolling"
+			},
+			{
+				"name": "sugar", "unit": "teaspoon", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "kosher salt", "unit": "teaspoon", "amount": 2, "id": "e000009", "optional": 0, "addi": ""
+			},
+			{
+				"name": "instant dry yeast", "unit": "envelope", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "water", "unit": "cup", "amount": "1 1/2", "id": "", "optional": 0, "addi": "110 degrees F"
+			},
+			{
+				"name": "olive oil", "unit": "teaspoon", "amount": 4, "id": "e000010", "optional": 0, "addi": ""
+			}	
+    	],
+    	"whole": [ 
+    		{
+		 		"name": "pizza dough", "unit": "ball", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "deli ham", "unit": "oz", "amount": 8, "id": "e000001", "optional": 0, "addi": "thinly sliced"
+			},
+			{
+		 		"name": "mozzarella cheese", "unit": "cup", "amount": 1, "id": "e000002", "optional": 0, "addi": "shredded" 
+			},
+			{
+		 		"name": "mustard or horseradish sauce", "unit": "", "amount": "", "id": "e000004", "optional": 1, "addi": "for serving"
+			},
+			{
+		 		"name": "fresh parsley", "unit": "", "amount": "", "id": "", "optional": 1, "addi": "for sprinkling"
+			},
+			{
+		 		"name": "bake sheet", "unit": "", "amount": 1, "id": "e000006", "optional": 0, "addi": ""
+			},
+			{
+				"name": "meat slicer", "unit": "", "amount": 1, "id": "e000005", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "cheese grater", "unit": "", "amount": 1, "id": "e000003", "optional": 1, "addi": ""
+			},
+			{
+				"name": "cut knife", "unit": "", "amount": 1, "id": "e000007", "optional": 1, "addi": ""
+			}
+    	]
+    },
+    "comments": [
+    	{
+    		"content": "test comment",
+			"by": "u000002",
+			"on": "2014-11-26"
+    	}
+    ],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000002",
+    "title": "Monte Cristo Sandwich",
+    "author": "©Amy Johnson | She Wears Many Hats",
+    "photo": "http://cdn.shewearsmanyhats.com/wp-content/uploads/2014/01/monte-cristo-sandwich-7new.jpg",
+    "url": [
+    	"http://shewearsmanyhats.com/monte-cristo/"
+    ],
+    "likes": [],
+    "serving": "2 sandwiches",
+    "time": {
+    	"prepare": "7 min",
+    	"cook": "5 min",
+    	"total": "12 min" 
+    },
+    "description": "Ham and cheese never looked so good. Try this easy Monte Cristo Sandwich for breakfast, lunch or dinner.",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Beat eggs in a shallow dish (large enough to fit a sandwich) along with a few pinches of salt and pepper. Set aside.",
+		  		"Assemble sandwiches, with mustard, mayonnaise, ham, cheese, salt and pepper to personal preference. Slightly compress sandwich.",
+		  		"Over medium heat melt butter in skillet.",
+		  		"Dip and coat each sandwich in beaten egg, and place in skillet. Cook sandwiches 2-3 minutes on each side, until browned to liking and cheese has melted."
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "egg", "unit": "", "amount": 2, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "salt", "unit": "pinch", "amount": 1, "id": "e000009", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pepper", "unit": "pinch", "amount": 2, "id": "e000022", "optional": 0, "addi": ""
+			},
+			{
+				"name": "white bread", "unit": "slice", "amount": 4, "id": "e000013", "optional": 0, "addi": ""
+			},
+			{
+				"name": "mustard", "unit": "tablespoon", "amount": 2, "id": "e000004", "optional": 0, "addi": ""
+			},
+			{
+				"name": "mayonnaise", "unit": "tablespoon", "amount": 2, "id": "e000011", "optional": 0, "addi": ""
+			},
+			{
+				"name": "baked ham", "unit": "lb", "amount": "1/2", "id": "e000001", "optional": 0, "addi": "thick sliced"
+			},
+			{
+		 		"name": "gruyere cheese", "unit": "oz", "amount": "1/2", "id": "e000014", "optional": 0, "addi": "shredded"
+			},
+			{
+		 		"name": "butter", "unit": "tablespoon", "amount": 2, "id": "e000016", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "skillet", "unit": "", "amount": 1, "id": "e000017", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "powdered sugar", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "honey", "unit": "", "amount": "", "id": "e000012", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "preserves", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+				"name": "meat slicer", "unit": "", "amount": 1, "id": "e000005", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "cheese grater", "unit": "", "amount": 1, "id": "e000003", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "egg beater", "unit": "", "amount": 1, "id": "e000015", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000002",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000003",
+    "title": "Grilled Pineapple Ham Kabobs",
+    "author": "©Amy Johnson | She Wears Many Hats",
+    "photo": "http://cdn.shewearsmanyhats.com/wp-content/uploads/2014/04/pineapple-ham-kabobs-7.jpg",
+    "url": [
+    	"http://shewearsmanyhats.com/grilled-pineapple-ham-kabobs-recipe/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "A perfect way to use leftover ham for an easy main dish or a fun appetizer.",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Prepare grill.",
+		  		"Assemble ham and pineapple on skewers in alternating pattern.",
+		  		"Place skewers over indirect heat on grill, and baste occasionally with pineapple juice if desired, turning kabobs after 3-4 minutes on each side, or cooked to preference.",
+		  		"If using wooden skewers, soak for at least 30 minutes before using to reduce burning skewers."
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "ham", "unit": "", "amount": "", "id": "e000001", "optional": 0, "addi": "sliced, cut in strips or squares"
+			},
+			{
+				"name": "pineapple", "unit": "", "amount": "", "id": "", "optional": 0, "addi": "cut in chunks"
+			},
+			{
+		 		"name": "reserve pineapple juice from pineapple", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "grill", "unit": "", "amount": 1, "id": "e000019", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "skewers", "unit": "", "amount": "", "id": "e000020", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000003",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000004",
+    "title": "Skillet Bacon Spread Crockpot Potato Soup",
+    "author": "SusieQTPie",
+    "photo": "http://skilletstreetfood.com/_storage/546f80cdb5f95_00.JPG",
+    "url": [
+    	"http://skilletstreetfood.com/recipes.php?id=431"
+    ],
+    "likes": [],
+    "serving": "4 - 6",
+    "time": {
+    },
+    "description": "Super easy and tasty baked potato soup!",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Dump all but half and half into crock pot and let cook on high 6 hours. (Can cook on low 8-10 hours) Right before serving, whisk in half and half. Your crock pot will be very full!",
+				"Serve! Top with cheese or more Skillet Bacon Spread or both! Yummy! This soup freezes great!"
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "potatoes", "unit": "lb", "amount": 7, "id": "", "optional": 0, "addi": "peeled and chopped"
+			},
+			{
+				"name": "chicken stock", "unit": "quart", "amount": 3, "id": "e000021", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "celery", "unit": "stalk", "amount": 4, "id": "", "optional": 0, "addi": "chopped"
+			},
+			{
+		 		"name": "medium onions", "unit": "", "amount": 2, "id": "", "optional": 0, "addi": "chopped"
+			},
+			{
+		 		"name": "chives", "unit": "cup", "amount": "1/4", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "pepper", "unit": "tablespoon", "amount": 2, "id": "e000022", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "half & half", "unit": "quart", "amount": 1, "id": "e000023", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "skillet bacon spread", "unit": "cup", "amount": 1, "id": "e000024", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000005",
+    "title": "SMOKED HONEY WHISKEY SOUR",
+    "author": "",
+    "photo": "http://www.reclaimingprovincial.com/wp-content/uploads/2013/03/Burnt-Whiskey-Sour2.jpg",
+    "url": [
+    	"http://bittermilk.com/recipes/smoked-honey-whiskey-sour/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+	  			"Shake with lots of ice. Pour into rocks glass. Garnish with lemon twist."
+	  		]
+	  	},
+		"video": {
+			"whole": "http://vimeo.com/73165806"
+		}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "bourbon", "unit": "part", "amount": 1, "id": "e000025", "optional": 0, "addi": "or rye"
+			},
+			{
+				"name": "Bittermilk No. 3", "unit": "part", "amount": 1, "id": "e000026", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000027", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "lemon garnish knife", "unit": "", "amount": 1, "id": "e000028", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000006",
+    "title": "The Jack Rose Cocktail",
+    "author": "David Wondrich",
+    "photo": "http://farm3.staticflickr.com/2877/10700213983_28904ee83f_o.jpg",
+    "url": [
+    	"http://www.kitchenriffs.com/2013/11/the-jack-rose-cocktail.html",
+    	"http://www.amazon.com/Imbibe-Professor-Featuringthe-Selection-Contributed/dp/0399532870"
+    ],
+    "likes": [],
+    "serving": "1",
+    "time": {
+    	"prepare": "5 min",
+    	"total": "5 min" 
+    },
+    "description": "Drinks authority David Embury called this one of his \"six basic cocktails\".\nSo who is this David Embury? And what is a \"basic cocktail,\" anyway?\nPatience—all will be revealed in time. But first, we need to introduce this tasty delight. \nThe Jack Rose is made with applejack, a variety of apple brandy. Applejack goes back a long way—it was extremely popular in North America during colonial times, and was the first spirit to be licensed for commercial production in the United States.\nThis drink is simplicity itself to make. Pour a slug of applejack, add freshly squeezed lime juice (or lemon—your choice), splash in some grenadine (the real stuff, please), and mix with ice. The result? An appealingly tart drink with just the right balance of sweetness. Not to mention gorgeous color. \nThe Jack Rose is perfect for sharpening appetites before an autumn dinner. Especially that big dinner you may be planning for the 4th Thursday of November (you know, the one they call Thanksgiving).",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+	  			"Place all ingredients (except for garnish) in a cocktail shaker half-filled with ice. Shake vigorously until the shaker is frosted and the drink is thoroughly chilled (about 20 seconds).",
+	  			"Strain the contents of the shaker into a cocktail glass, preferably one that's been chilled. Garnish with a lime slice or wedge if you wish, and serve."
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "applejack", "unit": "oz", "amount": 2, "id": "e000031", "optional": 0, "addi": "(apple brandy)"
+			},
+			{
+				"name": "fresh-squeezed lime juice", "unit": "oz", "amount": 1, "id": "", "optional": 0, "addi": "or substitute fresh-squeezed lemon juice if you prefer"
+			},
+			{
+		 		"name": "grenadine", "unit": "oz", "amount": "1/2", "id": "e000029", "optional": 0, "addi": "you might like a bit less or more"
+			},
+			{
+		 		"name": "lime wedge", "unit": "", "amount": "", "id": "", "optional": 1, "addi": "or slice for garnish (use lemon wedge/slice if you substitute lemon juice)"
+			},
+			{
+		 		"name": "lemon squeezer", "unit": "", "amount": 1, "id": "e000030", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "martini glass", "unit": "", "amount": 1, "id": "e000032", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000033", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000007",
+    "title": "Shirley Temple",
+    "author": "",
+    "photo": "http://i0.wp.com/www.pbpickles.com/wp-content/uploads/2015/02/Shirley-Temple-All-Grown-Up-Peanut-Butter-Dill-Pickles-Blog.jpg",
+    "url": [
+    	"http://cityofdaughters.com/pages/recipes"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Add Elsa's Rose Hip Grenadine to a Collins glass filled with ice; top with ginger ale.",
+		  		"Garnish with an orange slice and a cocktail cherry."
+		  	]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "ginger ale", "unit": "oz", "amount": 4, "id": "e000034", "optional": 0, "addi": ""
+			},
+			{
+				"name": "Elsa's Rose Hip Grenadine", "unit": "oz", "amount": "1/2", "id": "e000029", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "orange slice", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "maraschino cherry", "unit": "", "amount": "", "id": "e000035", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "glass", "unit": "", "amount": "", "id": "e000036", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000000",
+    "title": "Bramble Brew",
+    "author": "",
+    "photo": "http://www.theowlsbrew.com/media/lookbook/Bramble_BrewFINAL.jpg",
+    "url": [
+    	"http://www.theowlsbrew.com/recipes/index/details/id/2/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+				"Muddle fresh raspberries & strawberries",
+				"Shake & pour over ice",
+				"use fresh mint to garnish"
+		  	]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "pink and black", "unit": "part", "amount": 2, "id": "e000037", "optional": 0, "addi": ""
+			},
+			{
+				"name": "tequila", "unit": "part", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "ice", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "fresh mint", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "muddler", "unit": "", "amount": 1, "id": "e000038", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000027", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000008",
+    "title": "The Green Garden",
+    "author": "",
+    "photo": "http://www.theowlsbrew.com/media/lookbook/GreenGardenFINAL.jpg",
+    "url": [
+    	"http://www.theowlsbrew.com/recipes/index/details/id/5/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+	  			"Pour over ice into a mason jar or shake & pour into a martini glass."
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "the classic", "unit": "part", "amount": 2, "id": "e000037", "optional": 0, "addi": ""
+			},
+			{
+				"name": "green juice", "unit": "part", "amount": 2, "id": "", "optional": 0, "addi": "recommend: cold press juice, cucumber & mint or mixed greens w apple & lemon"
+			},
+			{
+		 		"name": "vodka", "unit": "part", "amount": 1, "id": "e000039", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "sake", "unit": "part", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "martini glass", "unit": "", "amount": 1, "id": "e000032", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "juicer", "unit": "", "amount": 1, "id": "e000040", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000033", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000009",
+    "title": "White Bubbly",
+    "author": "",
+    "photo": "http://www.theowlsbrew.com/media/lookbook/White_Bubbly.jpeg",
+    "url": [
+    	"http://www.theowlsbrew.com/recipes/index/details/id/33/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Shake The Classic and Ginger Liqueur with ice.",
+				"Strain and pour into champagne glass.",
+				"Top with Champagne."
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "the classic", "unit": "part", "amount": 1, "id": "e000037", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "ginger liqueur", "unit": "part", "amount": "1/2", "id": "e000041", "optional": 0, "addi": ""
+			},
+			{
+				"name": "champagne", "unit": "part", "amount": 1, "id": "e000042", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "champagne glass", "unit": "", "amount": "", "id": "e000043", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000033", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000010",
+    "title": "Owl's Toddy",
+    "author": "",
+    "photo": "http://www.theowlsbrew.com/media/lookbook/Owl_s_ToddyFINAL.jpg",
+    "url": [
+    	"http://www.theowlsbrew.com/recipes/index/details/id/13/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"In a saucepan, combine: The Classic, Whiskey and Apple slices",
+		  		"Heat until desired temp. (do not boil)",
+		  		"Pour into mug",
+		  		"use cinnamon stick as garnish"
+	  		]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "the classic", "unit": "part", "amount": 2, "id": "e000037", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "whiskey", "unit": "part", "amount": 1, "id": "e000044", "optional": 0, "addi": ""
+			},
+			{
+				"name": "apple slices", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "mug", "unit": "", "amount": "", "id": "e000046", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cinnamon stick", "unit": "", "amount": "", "id": "e000047", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "saucepan", "unit": "", "amount": 1, "id": "e000045", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000011",
+    "title": "Margari-tea",
+    "author": "",
+    "photo": "http://www.theowlsbrew.com/media/lookbook/MargariteaFINAL.jpg",
+    "url": [
+    	"http://www.theowlsbrew.com/recipes/index/details/id/6/"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Strain out jalepeno seeds",
+		  		"Muddle The Classic and Tequila with jalepeno slices",
+		  		"Shake & pour into a margarita glass",
+		  		"Rim glass with margarita salt",
+		  		"Garnish: fresh lime or for an extra hot kick, with cayenne pepper"
+		  	]
+	  	},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "the classic", "unit": "part", "amount": 2, "id": "e000037", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "tequila", "unit": "part", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "fresh jalepeno", "unit": "slice", "amount": "3-4", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "margarita glass", "unit": "", "amount": 1, "id": "e000049", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "margarita salt", "unit": "", "amount": "", "id": "e000048", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "fresh lime", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "cayenne pepper", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "cocktail shaker", "unit": "", "amount": 1, "id": "e000027", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "muddler", "unit": "", "amount": 1, "id": "e000038", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000012",
+    "title": "KAYA TOAST",
+    "author": "",
+    "photo": "http://farm8.staticflickr.com/7032/6815061821_d97ac4b244_z.jpg",
+    "url": [
+    	"http://iamafoodblog.com/kaya-toast-coconut-jam-on-toast-recipe/"
+    ],
+    "likes": [],
+    "serving": "1",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Toast your bread so it has some colour, no light, barely toasted pieces of bread please!",
+		  		"Spread on a thick layer of salted butter and top with a generous amount of kaya.",
+		  		"Top with another slice of buttered toast (yes, butter both slices) and dip into a soft boiled egg seasoned with dark soy and white pepper, if desired."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "bread", "unit": "slice", "amount": 2, "id": "", "optional": 0, "addi": "thick cut"
+			},
+			{
+		 		"name": "salted butter", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "KAYA", "unit": "", "amount": "", "id": "e000051", "optional": 0, "addi": "(coconut jam)"
+			},
+			{
+		 		"name": "eggs", "unit": "", "amount": "", "id": "", "optional": 1, "addi": "soft boiled"
+			},
+			{
+		 		"name": "dark soy sauce", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "white pepper", "unit": "", "amount": "", "id": "", "optional": 1, "addi": ""
+			},
+			{
+		 		"name": "toaster", "unit": "", "amount": 1, "id": "e000050", "optional": 0, "addi": ""
+			}
+    	]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000013",
+    "title": "CHOCOLATE PUDDING WITH CARAMEL & VERMONT CREAMERY CREME FRAICHE",
+    "author": "Calley Hastings",
+    "photo": "http://farm3.staticflickr.com/2810/13036003605_bf8f6fa054_c.jpg",
+    "url": [
+    	"http://blog.fattoadfarm.com/2014/03/08/chocolate-pudding-with-caramel-vermont-creamery-creme-fraiche/",
+    	"http://smittenkitchen.com/blog/2008/02/best-chocolate-pudding/"
+    ],
+    "likes": [],
+    "serving": "6 - 7",
+    "time": {
+    },
+    "description": "Okay, hold on to your hats, I think this is HANDS DOWN the best dessert we've ever invented.  Seriously, we're lucky any of this yummy stuff lasted long enough to photograph it.   After so many servings my stomach is thoroughly disgusted with my total lack of will power and self-control, but my taste buds are eternally grateful.   MAN ALIVE!  This is some tasty business.",
+    "steps": {
+	  	"text": {
+	  		"chocolate pudding": [
+				"Combine the cornstarch, sugar and salt in a medium saucepan, Slowly whisk in the milk, in a thin steam at first so that lumps don't form, then more quickly once the cornstarch mixture is smoothly incorporated.",
+		  		"Place over medium-low heat and stir occasionally, scraping the bottom and sides. Use a whisk as necessary should lumps begin to form. After 10 minutes or so (slower over lower heat is better, to give the cornstarch time to cook), before it starts to simmer, the mixture should begin to thicken, enough that it will coat the back of a spoon.",
+		  		"Add the chocolate, and continue stirring for another 2 to 4 minutes, until chocolate is fully incorporated and mixture is quite thick.",
+				"Remove from heat and stir in the vanilla.",
+				"Distribute among individual pudding cups or one large serving bowl, and chill until it is cool and set, about 2 to 3 hours."
+			],
+			"whole": [
+		  		"Fill a heart-stoppingly adorable pudding cup half way with the divine chocolate pudding.",
+		  		"Pour a layer of your favorite flavor of Fat Toad Farm Goat's Milk Caramel on top of the pudding layer, use as much as you like, I used about 2 tablespoons of our Original Caramel (my favorite always and forever).",
+		  		"Dollop a final layer of Vermont Creamery Creme Fraiche on top and then stand back and admire your handiwork.",
+		  		"If you're feeling really crazy, stab it with a pretzel stick for a little savory kick.",
+		  		"Get a spoon and be prepared to die of happiness!"
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"chocolate pudding": [
+		    {
+		 		"name": "cornstarch", "unit": "cup", "amount": "1/4", "id": "e000056", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "sugar", "unit": "cup", "amount": "1/2", "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "salt", "unit": "teaspoon", "amount": "1/8", "id": "e000054", "optional": 0, "addi": ""
+			},
+			{
+				"name": "whole milk", "unit": "cup", "amount": 3, "id": "e000058", "optional": 0, "addi": ""
+			},
+			{
+				"name": "semi- or bittersweet chocolate", "unit": "oz", "amount": 6, "id": "e000053", "optional": 0, "addi": "coarsely chopped(or using good chocolate chips)"
+			},
+			{
+				"name": "pure vanilla extract", "unit": "teaspoon", "amount": 1, "id": "e000055", "optional": 0, "addi": ""
+			}
+		],
+		"whole": [	
+			{
+				"name": "chocolate pudding", "unit": "", "amount": "", "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "Fat Toad Farm Goat's Milk Caramel", "unit": "tablespoon", "amount": 2, "id": "e000057", "optional": 0, "addi": ""
+			},
+			{
+				"name": "Vermont Creamery Creme Fraiche", "unit": "", "amount": "", "id": "e000059", "optional": 0, "addi": ""
+			},
+			{
+				"name": "prezel chip", "unit": "", "amount": "", "id": "e000060", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cream mixer", "unit": "", "amount": 1, "id": "e000052", "optional": 1, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000014",
+    "title": "CARAMEL BAKED APPLES FROM FAT TOAD FARM",
+    "author": "Calley Hastings",
+    "photo": "http://farm4.staticflickr.com/3809/9733530662_a2e0bfd334_c.jpg",
+    "url": [
+    	"http://blog.fattoadfarm.com/2013/09/13/caramel-with-apples/"
+    ],
+    "likes": [],
+    "serving": "4",
+    "time": { 
+    },
+    "description": "This is one of our favorite – but also one of the simplest and most gratifying ways to eat Fat Toad Farm Caramel!",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Core 4 Macintosh or other baking apples.",
+		  		"Place in 8X8 baking pan.",
+		  		"Put a dollop of butter in cored center of each apple.",
+		  		"Bake at 350F for 45 minutes or until golden brown.",
+		  		"Pour Fat Toad Farm Cinnamon Goat's Milk Caramel in the center and drizzle on top.",
+		  		"Garnish with a cinnamon stick or serve with vanilla ice cream (or both!)."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+		 		"name": "baking apple", "unit": "", "amount": 4, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "butter", "unit": "dollop", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "Fat Toad Farm Cinnamon Goat's Milk Caramel", "unit": "", "amount": "", "id": "e000057", "optional": 0, "addi": ""
+			},
+			{
+				"name": "cinnamon stick", "unit": "", "amount": 4, "id": "e000047", "optional": 0, "addi": ""
+			},
+			{
+				"name": "vanilla ice cream ", "unit": "", "amount": "", "id": "e000063", "optional": 1, "addi": ""
+			},
+			{
+				"name": "apple corer", "unit": "", "amount": 1, "id": "e000061", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "baking pan", "unit": "", "amount": 1, "id": "e000062", "optional": 0, "addi": ""
+			}
+	    ]
+	},
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000015",
+    "title": "INTRODUCING OUR NEW VERMONT MAPLE GOAT'S MILK CARAMEL",
+    "author": "Calley Hastings",
+    "photo": "http://fattoadfarmblog.files.wordpress.com/2014/10/websitechmpancakes.jpg",
+    "url": [
+    	"http://blog.fattoadfarm.com/2014/10/01/introducing-our-new-vermont-maple-goats-milk-caramel/"
+    ],
+    "likes": [],
+    "serving": "15 pancakes (depending on size)",
+    "time": {
+    	"total": "20 min" 
+    },
+    "description": "Recipe adapted from The King Arthur Flour 200th Anniversary Cookbook",
+    "steps": {
+	  	"text": {
+		  	"whole": [
+		  		"In a large bowl, mix the dry ingredients thoroughly.",
+		  		"In a second bowl, mix the buttermilk and melted butter (or oil) together. Separate the eggs setting the whites aside to fold in later and add only the yolks to the buttermilk and butter mixture. Take about 20 seconds and blend this mixture into the dry ingredients. Finally, in a separate bowl, beat the egg whites that you set aside until they form stiff peaks and fold them into the mixture.",
+		  		"Heat up your griddle and pour about a quarter cup of the mixture for each pancake leaving enough space for them to expand. Turn them when the bubbles on the top surface pop and don't fill in. The second side takes only half the amount of time needed to cook the first.",
+		  		"Serve them up with a healthy drizzle of Fat Toad Farm Vermont Maple Caramel Sauce and be prepared to lick your plate clean!"
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "Fat Toad Farm Vermont Maple Caramel Sauce", "unit": "oz", "amount": 8, "id": "e000057", "optional": 0, "addi": ""
+			},
+		    {
+		 		"name": "pancake mix", "unit": "cup", "amount": 4, "id": "e000064", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "sugar", "unit": "tablespoon", "amount": "2 - 4", "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "baking powder", "unit": "teaspoon", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "salt", "unit": "teaspoon", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "baking soda", "unit": "teaspoon", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "egg", "unit": "", "amount": 4, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "buttermilk", "unit": "quart", "amount": 1, "id": "", "optional": 0, "addi": "or yogurt"
+			},	
+			{
+				"name": "butter", "unit": "cup", "amount": "1/2", "id": "e000016", "optional": 1, "addi": "melted, or vegetable oil"
+			}
+	    ]
+	},
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000016",
+    "title": "Crème fraîche baked eggs",
+    "author": "Samantha Seeley — Sweet Remedy",
+    "photo": "http://www.vermontcreamery.com/stuff/contentmgr/files/2/bd63978bdeaae8da62c16d34c62d90e4/image/_resized/30_608_608_sr_baked_eggs_608x608.jpg",
+    "url": [
+    	"http://www.vermontcreamery.com/cr%C3%A8me-fra%C3%AEche-baked-eggs"
+    ],
+    "likes": [],
+    "serving": "4 large bowls",
+    "time": {
+    	"prepare": "5 min",
+    	"cook": "15 min",
+    	"total": "20 min" 
+    },
+    "description": "Upgrade your morning routine with these quick and easy baked eggs from Sweet Remedy, made with crème fraîche, arugula, swiss chard, and goat cheese.",
+    "steps": {
+	  	"text": {
+		  	"whole": [
+		  		"Preheat oven to 350º F. Split the swiss chard and arugula between four large ramekins.",
+		  		"In a small bowl, mix together the heavy cream and crème fraîche. Divide the mixture into four and pour on top of the swiss chard and arugula, stir gently.",
+		  		"Crack the eggs into the ramekins and sprinkle on salt and pepper. Place on baking sheet and bake for about 15 minutes or until eggs and mixture have firmed up. Top each ramekin with goat cheese and serve."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "egg", "unit": "", "amount": 8, "id": "", "optional": 0, "addi": ""
+			},
+		    {
+				"name": "Vermont Creamery Crème Fraîche", "unit": "teaspoon", "amount": "1/2", "id": "e000059", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "heavy cream", "unit": "tablespoon", "amount": 4, "id": "e000058", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "arugula, roughly chopped", "unit": "cup", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "swiss chard, roughly chopped", "unit": "cup", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "salt", "unit": "teaspoon", "amount": "1/2", "id": "e000009", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pepper", "unit": "teaspoon", "amount": "1/2", "id": "e000022", "optional": 0, "addi": ""
+			},	
+			{
+				"name": "Vermont Creamery Fresh Goat Cheese", "unit": "tablespoon", "amount": 4, "id": "e000066", "optional": 1, "addi": ""
+			}
+	    ]
+	},
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000017",
+    "title": "N.Y. strip steaks with coupole and fig demi glaze",
+    "author": "",
+    "photo": "http://www.vermontcreamery.com/stuff/contentmgr/files/0/4145319d2fe331735a9322c6dc1783fb/image/_resized/30_608_350_coupole_steak.jpg",
+    "url": [
+    	"http://www.vermontcreamery.com/ny-strip-steaks-with-coupole-and-fig-demi-glaze"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"Start sauce a half hour before grilling.",
+		  		"Put the fig jam, port wine, and beef broth together in a small saucepan and bring to a boil. Turn heat down to medium-low and simmer, stirring occasionally, until it has reduced by half.",
+		  		"Meanwhile light the grill and remove steaks from the packages. Salt and pepper steaks on both sides and grill to your liking.",
+		  		"One minute before the steaks are finished, place a slice of Coupole on each steak and close the lid until the cheese starts to melt and steaks are done.Allow steak to rest at room temperature for 5 minutes before serving. Taste the sauce and add salt and pepper if necessary. Serve with the sauce on the side or drizzled over the top."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "fig jam", "unit": "", "amount": "1/2", "id": "e000067", "optional": 0, "addi": "or spread"
+			},
+		    {
+				"name": "port wine", "unit": "cup", "amount": "3/4", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "unsalted beef broth", "unit": "cup", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "New York strip steaks", "unit": "", "amount": 4, "id": "e000068", "optional": 0, "addi": "or sirloin strip steaks"
+			},
+			{
+				"name": "salt", "unit": "", "amount": "", "id": "e000009", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pepper", "unit": "", "amount": "", "id": "e000069", "optional": 0, "addi": "freshly ground"
+			},	
+			{
+				"name": "Coupole", "unit": "", "amount": 1, "id": "e000071", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pepper mill", "unit": "", "amount": 1, "id": "e000070", "optional": 1, "addi": ""
+			}
+	    ]
+	},
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000018",
+    "title": "Chickpea Hummus w/ Madras Cooking Sauce",
+    "author": "SPICEMODE",
+    "photo": "http://recipes.spicemode.co/wp-content/uploads/2014/10/IMG_4422-e1412896592438.jpg",
+    "url": [
+    	"http://recipes.spicemode.co/madras-chickpea-hummus/"
+    ],
+    "likes": [],
+    "serving": "4",
+    "time": {
+    	"prepare": "5 min",
+    	"cook": "5 min",
+    	"total": "10 min"
+    },
+    "description": "This technique can be used to combine any of your favorite Spicemode Cooking Sauces with beans for a tasty spread or dip. I have used the on a sandwich, for a veggie platter or simply with crackers.",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"In the bowl of a food process combine 1/2 jar Madras Cooking Sauce, 2 Cans of Chickpeas, 1/4 Cup Coconut Milk, 1 Tbsp of Coconut Oil, Coconut Flakes and juice from 1/2 a lemon.",
+		  		"Add all ingredients into a food processor and combine until smooth. Add more coconut milk if too thick.",
+		  		"Taste and add a couple more spoons of cooking sauce for a bolder flavor. Adjust lemon juice for brightness.  Season with salt and enjoy."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "Madras cooking sauce", "unit": "jar", "amount": "1/2", "id": "e000072", "optional": 0, "addi": ""
+			},
+		    {
+				"name": "organic chickpeas", "unit": "can", "amount": 2, "id": "e000073", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "coconut milk", "unit": "cup", "amount": "1/4", "id": "e000074", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "coconut oil", "unit": "tablespoon", "amount": 1, "id": "e000075", "optional": 0, "addi": ""
+			},
+			{
+				"name": "unsweetened coconut flakes", "unit": "cup", "amount": "1/4", "id": "e000076", "optional": 0, "addi": ""
+			},	
+			{
+				"name": "lemon", "unit": "", "amount": "1/2", "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "salt", "unit": "", "amount": "", "id": "e000009", "optional": 0, "addi": ""
+			},
+			{
+				"name": "lemon juicer", "unit": "", "amount": 1, "id": "e000081", "optional": 0, "addi": ""
+			}
+	    ]
+	},
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000019",
+    "title": "Gin Gin Cucumber Popsicles",
+    "author": "",
+    "photo": "http://www.morriskitchen.com/assets/client_files/images/tumblr_nbaablAokB1rafqqqo1_1280.jpg",
+    "url": [
+    	"http://www.morriskitchen.com/recipes/gin-gin-cucumber-popsicles"
+    ],
+    "likes": [],
+    "serving": "",
+    "time": {
+    },
+    "description": "",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"In a blender combine cucumber, mint, lime juice, MK Ginger Syrup and gin, blend until mixture is smooth.",
+				"Add water and blend for 5 seconds to incorporate.",
+				"Fill the ice pop molds 3/4 full with the cucumber and ginger mixture.",
+				"Place molds in freezer for 1 hour and then put the ice pop sticks in the mold.",
+				"Freeze for 12 hours to ensure popsicles have set before serving."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "Morris Kitchen Ginger Syrup", "unit": "oz", "amount": 2, "id": "e000077", "optional": 0, "addi": ""
+			},
+		    {
+				"name": "craft gin", "unit": "oz", "amount": 2, "id": "e000078", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "cucumber", "unit": "", "amount": 1, "id": "e000079", "optional": 0, "addi": "large, peeled with seeds removed"
+			},
+			{
+		 		"name": "lime", "unit": "", "amount": 2, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "mint", "unit": "sprig", "amount": 6, "id": "e000080", "optional": 0, "addi": ""
+			},	
+			{
+				"name": "water", "unit": "cup", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+				"name": "lime juicer", "unit": "", "amount": 1, "id": "e000081", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pop mold", "unit": "", "amount": "", "id": "e000082", "optional": 0, "addi": ""
+			}
+		]
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+
+{
+	"id": "p000020",
+    "title": "Avocado, Bacon & Tomato Tartines",
+    "author": "",
+    "photo": "http://blender.wpengine.netdna-cdn.com/wp-content/uploads/2013/07/WS_MD_AvoTomTartines-036_Day11-544x633.jpg",
+    "url": [
+    	"http://www.williams-sonoma.com/recipe/avocado-bacon-tomato-tartines.html",
+    	"http://www.kingarthurflour.com/recipes/french-style-country-bread-recipe"
+    ],
+    "likes": [],
+    "serving": "4",
+    "time": {
+    },
+    "description": "With its silken texture and buttery flavor, avocado makes a delicious addition to these open-faced bacon and tomato sandwiches. When selecting avocados, avoid those that feel mushy; a ripe avocado will yield to gentle pressure when squeezed. Adapted from Williams-Sonoma Cooking from the Farmers' Market, by Tasha DeSerio & Jodi Liano (Weldon Owen, 2010).",
+    "steps": {
+	  	"text": {
+	  		"coarse country bread": [
+	  			"Making sponge starter first (begin 2 to 16 hours ahead)",
+	  			"Stir 1 cup water(90 to 100°F), 1/2 teaspoon active dry, 5 1/4 oz King Arthur Unbleached Bread Flour and 1 oz King Arthur White Whole Wheat Flour together to make a thick, pudding-like mixture.",
+	  			"Cover with plastic wrap and leave on a counter overnight or for at least 2 to 4 hours.", 
+	  			"If you're making this in a bread machine, place the sponge ingredients inside, and turn the machine on for just a few seconds to mix the ingredients together. Turn the machine off and close the cover. Let the sponge rest for 4 hours or overnight (anywhere between 2 and 16 hours is fine, the longer the better).",
+	  			"Stir down the sponge with a spoon and add the water, preferably spring water (l00 to 115°F), yeast, sugar, most of the flour (hold back about 1/2 cup to use if required), and salt.",
+	  			"Knead the dough, adding more flour as necessary, to make a soft dough, 10 to 12 minutes.",
+				"You may also do this in your bread machine, using the Dough or Manual setting. After the dough has finished kneading, place it in a lightly greased bowl, and continue as directed below."
+	  		],	
+	  		"whole": [
+		  		"Preheat a broiler.",
+				"Arrange the bread in a single layer on a baking sheet and put under the broiler until lightly toasted, 2 to 3 minutes.", 
+				"Spread the aioli on the bread and top with a few tomato slices, pressing the tomato into the bread. Season with salt and top the tomato with the bacon slices, then with the avocado and a light sprinkle of salt. Serve immediately. Serves 4."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"coarse country bread": [
+    		{
+				"name": "water", "unit": "cup", "amount": 2, "id": "", "optional": 0, "addi": "lukewarm, preferably spring water"
+			},
+		    {
+				"name": "active dry", "unit": "teaspoon", "amount": "1/2", "id": "", "optional": 0, "addi": "or instant yeast"
+			},
+			{
+		 		"name": "King Arthur Unbleached Bread Flour", "unit": "oz", "amount": "21 1/4", "id": "e000083", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "King Arthur White Whole Wheat Flour", "unit": "oz", "amount": 1, "id": "e000084", "optional": 0, "addi": "or Traditional Whole Wheat Flour"
+			},
+			{
+		 		"name": "instant yeast", "unit": "teaspoon", "amount": "1/2", "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "sugar", "unit": "teaspoon", "amount": 1, "id": "", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "salt", "unit": "teaspoon", "amount": "1 to 1 1/2", "id": "e000022", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "bread machine", "unit": "", "amount": 1, "id": "", "optional": 0, "addi": ""
+			}
+		],
+    	"whole": [
+		    {
+				"name": "coarse country bread", "unit": "slice", "amount": 4, "id": "", "optional": 0, "addi": "each 1/2 inch thick"
+			},
+		    {
+				"name": "aioli", "unit": "cup", "amount": "1/2", "id": "e000085", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "tomatoes", "unit": "", "amount": 2, "id": "", "optional": 0, "addi": "cut into slices 1/4 inch thick"
+			},
+			{
+		 		"name": "salt", "unit": "", "amount": "", "id": "e000054", "optional": 0, "addi": "to taste"
+			},
+			{
+				"name": "thin bacon slices", "unit": "", "amount": 8, "id": "e000086", "optional": 0, "addi": "cooked until crisp"
+			},	
+			{
+				"name": "avocado", "unit": "", "amount": 1, "id": "", "optional": 0, "addi": "peeled, pitted and thinly sliced"
+			},
+			{
+				"name": "avocado tool", "unit": "", "amount": 1, "id": "e000087", "optional": 0, "addi": ""
+			},
+			{
+				"name": "bake sheet", "unit": "", "amount": 1, "id": "e000006", "optional": 0, "addi": ""
+			}
+		]		
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+
+{
+	"id": "p000021",
+    "title": "Oysters on the Half Shell with Mignonette Sauce",
+    "author": "",
+    "photo": "http://blender.wpengine.netdna-cdn.com/wp-content/uploads/2013/12/WS13D03091-652x572.jpg",
+    "url": [
+    	"http://www.williams-sonoma.com/recipe/oysters-on-the-half-shell-with-mignonette-sauce.html"
+    ],
+    "likes": [],
+    "serving": "6",
+    "time": {
+    },
+    "description": "Folk wisdom holds that oysters may only be eaten safely during months with the letter \"r\" in their names. Although modern methods and standards for their cultivation now make them safe to eat year-round, the shellfish will be at their flavorful best in winter, when the coastal waters from which they are harvested are coldest and freshest. Adapted from Williams-Sonoma Seasonal Celebration Series, Winter, by Joanne Weir (Time-Life Books, 1997).",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"To make the mignonette sauce, in a small bowl, stir together the wine, 3 Tbs. of the vinegar, the shallots, red pepper flakes and black pepper. Taste and add more vinegar if needed.",
+		  		"Place the bowl of mignonette sauce on a platter and surround it with a bed of ice. Discard any oysters that do not close tightly to the touch.",
+		  		"Scrub each oyster thoroughly with a stiff-bristled brush, rinsing it well under cold running water. Holding each oyster flat side up in a kitchen towel and using an oyster knife, slip the tip of the knife into the shell near the hinge and pry upward to open. Run the knife blade along the inside of the top shell to sever the muscle that joins the shells, then lift off the top shell. Run the knife underneath the oyster to free it from the rounded, bottom shell, being careful not to spill the liquor.", 
+		  		"Nest the oysters in their shells on the ice.",
+		  		"Garnish the platter with lemon wedges and parsley sprigs and serve immediately. Serves 6."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "dry red wine", "unit": "cup", "amount": "1/2", "id": "e000088", "optional": 0, "addi": "such as Cabernet Sauvignon, Zinfandel or Pinot Noir"
+			},
+		    {
+				"name": "red wine vinegar", "unit": "tablespoon", "amount": "3 to 4", "id": "e000089", "optional": 0, "addi": ""
+			},
+			{
+		 		"name": "shallots", "unit": "", "amount": 4, "id": "", "optional": 0, "addi": "minced"
+			},
+			{
+		 		"name": "red pepper flakes", "unit": "teaspoon", "amount": "1/8", "id": "e000090", "optional": 0, "addi": ""
+			},
+			{
+				"name": "freshly cracked black pepper", "unit": "", "amount": "", "id": "e000091", "optional": 0, "addi": "to taste"
+			},	
+			{
+				"name": "ice", "unit": "", "amount": "", "id": "", "optional": 0, "addi": "crushed or shaved"
+			},
+			{
+				"name": "oysters", "unit": "", "amount": 36, "id": "e000093", "optional": 0, "addi": "in the shell"
+			},
+			{
+				"name": "lemon wedges", "unit": "", "amount": "", "id": "", "optional": 0, "addi": "for garnish"
+			},
+			{
+				"name": "fresh flat-leaf parsley sprigs", "unit": "", "amount": "", "id": "", "optional": 0, "addi": "for garnish"
+			},
+			{
+				"name": "wine pair", "unit": "", "amount": "", "id": "e000094", "optional": 0, "addi": ""
+			},
+			{
+				"name": "pepper mill", "unit": "", "amount": 1, "id": "e000070", "optional": 0, "addi": ""
+			},
+			{
+				"name": "plate", "unit": "", "amount": 1, "id": "e000092", "optional": 0, "addi": ""
+			}
+		]		
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+},
+
+{
+	"id": "p000022",
+    "title": "Halibut with Tomatoes, Olives and Marjoram",
+    "author": "",
+    "photo": "http://blender.wpengine.netdna-cdn.com/wp-content/uploads/2014/10/Halibut-with-Tomatoes-Olives-and-Marjoram-652x6971.jpg",
+    "url": [
+    	"http://www.williams-sonoma.com/recipe/halibut-with-tomatoes-olives-and-marjoram.html"
+    ],
+    "likes": [],
+    "serving": "2",
+    "time": {
+    },
+    "description": "Enhanced with salty olives and fragrant marjoram and set against creamy polenta, this brightly flavored fish stew offers a wonderful contrast of tastes and colors. End the meal with grapes and newly harvested walnuts, served in their shells. Adapted from Williams-Sonoma Weeknight Fresh & Fast, by Kristine Kidd (Williams-Sonoma, 2011).",
+    "steps": {
+	  	"text": {
+	  		"whole": [
+		  		"In a large fry pan over medium-high heat, warm the olive oil.",
+		  		"Add the onion and shallot and sauté until tender, about 5 minutes.",
+		  		"Add the wine and boil until reduced by half, about 4 minutes.",
+		  		"Add the tomatoes with their juices and the red pepper flakes. Season with salt and black pepper.",
+		  		"Reduce the heat to medium and simmer, breaking up the tomatoes with a wooden spoon, until the sauce thickens slightly, about 10 minutes.",
+		  		"Season the fish with salt and black pepper. Add the fish to the pan and turn to coat it with the sauce.",
+		  		"Cover the pan and simmer until the fish is almost cooked through, about 4 minutes.",
+		  		"Turn the fish pieces over, add the olives and marjoram and simmer until the fish is cooked through, about 1 minute. Taste and adjust the seasonings with salt and black pepper.", 
+		  		"Spoon the polenta onto warmed plates and spoon the fish and sauce over the top. Serve immediately. Serves 2.", 
+		  		"Quick Tips: This quick one-dish stew, which can be easily doubled for a crowd, is equally satisfying served over rice if you have it on hand in the pantry. Or, in the summer, you could replace the polenta with grilled crusty bread, which is great for soaking up the sauce. If your fishmonger does not have halibut, mahimahi would also be good in this dish."
+		  	]
+		},
+		"video": {}
+    },
+    "elements": {
+    	"whole": [
+		    {
+				"name": "olive oil", "unit": "teaspoon", "amount": 2, "id": "e000096", "optional": 0, "addi": ""
+			},
+		    {
+				"name": "yellow onion", "unit": "", "amount": "1/2", "id": "", "optional": 0, "addi": "chopped"
+			},
+			{
+		 		"name": "large shallot", "unit": "", "amount": 1, "id": "", "optional": 0, "addi": "minced"
+			},
+			{
+		 		"name": "dry white wine", "unit": "cup", "amount": "2/3", "id": "e000095", "optional": 0, "addi": ""
+			},
+			{
+				"name": "Italian tomatoes", "unit": "can (14.28 oz.)", "amount": 1, "id": "", "optional": 0, "addi": "preferably San Marzano, with juices"
+			},	
+			{
+				"name": "red pepper flakes", "unit": "pinch", "amount": 1, "id": "e000090", "optional": 0, "addi": ""
+			},
+			{
+				"name": "coarse kosher salt", "unit": "", "amount": "", "id": "e000009", "optional": 0, "addi": "to taste"
+			},
+			{
+				"name": "freshly ground black pepper", "unit": "", "amount": "", "id": "e000022", "optional": 0, "addi": "to taste"
+			},
+			{
+				"name": "halibut", "unit": "lb", "amount": "3/4", "id": "e000098", "optional": 0, "addi": "cut into 1 1/2-inch pieces"
+			},
+			{
+				"name": "pitted kalamata olives", "unit": "cup", "amount": "1/4", "id": "e000099", "optional": 0, "addi": "quartered lengthwise"
+			},
+			{
+				"name": "fresh marjoram", "unit": "tablespoon", "amount": "1 to 2", "id": "e000100", "optional": 0, "addi": "chopped, or 1 teaspoon dried, crumbled"
+			},
+			{
+				"name": "cooked polenta", "unit": "", "amount": "", "id": "e000101", "optional": 0, "addi": "or rice for serving"
+			},
+			{
+				"name": "pepper mill", "unit": "", "amount": 1, "id": "e000097", "optional": 0, "addi": ""
+			},
+			{
+				"name": "rice cooker", "unit": "", "amount": 1, "id": "e000102", "optional": 0, "addi": ""
+			},
+			{
+				"name": "fry pan", "unit": "", "amount": 1, "id": "e000103", "optional": 0, "addi": ""
+			},
+			{
+				"name": "chopper", "unit": "", "amount": 1, "id": "e000104", "optional": 0, "addi": ""
+			},
+			{
+				"name": "herb mill", "unit": "", "amount": 1, "id": "e000105", "optional": 0, "addi": ""
+			}
+		]		
+    },
+    "comments": [],
+    "service option": [],
+    "tags": [],
+    "create": {
+		"by": "u000001",
+		"on": "2014-11-25",
+		"last": "2014-11-25"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]
