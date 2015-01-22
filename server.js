@@ -7,12 +7,12 @@ var BSON = mongo.BSONPure;
 var MongoClient = mongo.MongoClient, 
 	Server = mongo.Server;
 	
-var mongoClient = new MongoClient(new Server('54.148.6.26', 27017));
+var mongoClient = new MongoClient(new Server('localhost', 27017));
 var db;
 
 mongoClient.open(function(err, mongoClient) {
 	assert.equal(null, err);
-	db = mongoClient.db("nodetest2"); // The DB is set here
+	db = mongoClient.db("dinneract"); // The DB is set here
 	
 	/*
 	// Drop the collection from this world
