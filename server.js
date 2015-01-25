@@ -107,8 +107,8 @@ var dataOp_posts = ( function(paras, res) {
 	
 	db.collection("posts", function(colerr, collection) {
 		
-		console.log(colerr);
-		//assert.equal(null, colerr);
+		//console.log(colerr);
+		assert.equal(null, colerr);
 		
 		if(paras.length == 4) { //get all
 			
@@ -116,7 +116,7 @@ var dataOp_posts = ( function(paras, res) {
 			
 			if(paras[3] == "full") {
 				
-				collection.find({}, { fields: {title: 0, photo: 0, create: 0, _id: 0}, skip: 0, limit: postNumLimitPerReq }).toArray(function(err, data) {
+				collection.find({}, { fields: {title: 0, photo: 0, create: 0, _id: 0}, skip: 0, limit: postNumLimitPerReq, sort: [['create.last','desc']] }).toArray(function(err, data) {
 					assert.equal(null, err);
 				    //console.log(data);
 				    res.writeHead(200, {
@@ -133,10 +133,11 @@ var dataOp_posts = ( function(paras, res) {
 				
 				collection.aggregate([
 					{ $project:
-						{ _id: 0, title: 1, photo: 1, create: 1, like_num: { $size: "$likes" } }
+						{ _id: 0, id: 1, title: 1, photo: 1, create: 1, like_num: { $size: "$likes" } }
 					},
 					{ $skip : 0 },
-					{ $limit: postNumLimitPerReq }
+					{ $limit: postNumLimitPerReq },
+					{ $sort : { "create.last" : -1 } }
 				], function(err, postData) {
 					assert.equal(null, err);
 				    //console.log(err); console.log(postData);
@@ -145,7 +146,7 @@ var dataOp_posts = ( function(paras, res) {
 				    	hashMap = {};
 				    var allData = postData;
 				    for(i = 0; i < postData.length; i++) {
-				    	if(!hashMap[postData[i].create.by]) {
+				    	if(postData[i].create.by.length>0 && !hashMap[postData[i].create.by]) {
 				    		hashMap[postData[i].create.by] = true;
 				    		userIds.push(postData[i].create.by);
 				    	}
@@ -160,12 +161,19 @@ var dataOp_posts = ( function(paras, res) {
 						    hashMap = {};
 						    for(i = 0; i < userData.length; i++) {
 						    	hashMap[userData[i].id] = { name: userData[i].name, portrait: userData[i].portrait, location: userData[i].location };
+						    	
 						    }
 						    
 						    for(i = 0; i < allData.length; i++) {
-						    	allData[i].name = hashMap[ allData[i].create.by ].name;
-						    	allData[i].portrait = hashMap[ allData[i].create.by ].portrait;
-						    	allData[i].location = hashMap[ allData[i].create.by ].location;
+						    	if(allData[i].create.by.length > 0) {
+						    		allData[i].name = hashMap[ allData[i].create.by ].name;
+						    		allData[i].portrait = hashMap[ allData[i].create.by ].portrait;
+						    		allData[i].location = hashMap[ allData[i].create.by ].location;
+						    	} else {
+						    		allData[i].name = "Anonymous";
+						    		allData[i].portrait = "https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/user.png";
+						    		allData[i].location = "Unknown";
+						    	}
 						    }
 						    
 						    res.writeHead(200, {
@@ -187,17 +195,17 @@ var dataOp_posts = ( function(paras, res) {
 			}
 
 		} else if(paras.length == 5) {
-			//get one
-			//var o_id = new BSON.ObjectID( paras[4] );
-			var o_id = paras[4];
-			
-			collection.findOne({ 'id': o_id }, { _id: 0 }, function(err, data) {   
+			//get one or several
+			var o_id = decodeURIComponent( paras[4] ).replace(/\s+/g, ' ').split(','); //[id, id, id]
+			//console.log(o_id);
+				
+			collection.find({'id': {'$in' : o_id}}, { _id: 0 }).toArray(function(err, data) {
 				assert.equal(null, err);
 			    //console.log(data);
 			    res.writeHead(200, {
 			    	'Content-Type': 'text/plain',
 			    	'Access-Control-Allow-Origin': '*',
-			    	'Access-Control-Allow-Methods': 'GET',
+			    	'Access-Control-Allow-Methods': 'GET, POST',
 			    	'Access-Control-Allow-Headers': 'Content-Type'
 			    });
 		
@@ -642,6 +650,64 @@ var dataOp_like = ( function(paras, res) {
 var dataOp_unlike = ( function(paras, res) {
 	
 	
+	if(paras.length == 5) {
+		
+		var userId = decodeURIComponent( paras[3] );
+		var postId = decodeURIComponent( paras[4] );
+		
+		db.collection("users", function(colerr, collection) {
+			//console.log(colerr);
+			assert.equal(null, colerr);
+			
+			collection.update({ 'id': userId }, { $pull: { like: postId } }, { w: 1 }, function(err, result) {
+				assert.equal(null, err);			
+
+				if(err)	{
+					res.writeHead(200, {
+						'Content-Type': 'text/plain',
+						'Access-Control-Allow-Origin': '*',
+						'Access-Control-Allow-Methods': 'POST',
+						'Access-Control-Allow-Headers': 'Content-Type'
+					});
+					res.end( '"' + encodeURIComponent( '{"like_num": -1}' ) + '"' );
+				} else {
+					db.collection("posts", function(colerr2, collection2) {
+						assert.equal(null, colerr2);
+						//console.log(colerr);
+						collection2.findAndModify({ 'id': postId }, [['id', 1]], { $pull: { likes: userId } }, { new:true, upsert:false, w:1 }, function(err2, result2) {
+							
+							assert.equal(null, err2);
+							
+							res.writeHead(200, {
+								'Content-Type': 'text/plain',
+								'Access-Control-Allow-Origin': '*',
+								'Access-Control-Allow-Methods': 'POST',
+								'Access-Control-Allow-Headers': 'Content-Type'
+							});
+
+							if(err2)	{
+								res.end( '"' + encodeURIComponent( '{"like_num": -1}' ) + '"' );
+							} else {
+								res.end( '"' + encodeURIComponent( '{"like_num": ' + result2.likes.length + '}' ) + '"' );
+							}
+						});
+					});
+				}		
+			}); 
+		});
+		
+	} else {
+			
+		res.writeHead(200, {
+			'Content-Type': 'text/plain',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': 'POST',
+			'Access-Control-Allow-Headers': 'Content-Type'
+		});
+
+		res.end( '"' + encodeURIComponent( '{"result": 0}' ) + '"' );
+			
+	}
 	
 });
 
@@ -655,9 +721,13 @@ var dataOp = ( function(paras, res) {
 														fields - users: name, portrait, location
     
 	GET POST	/v1/posts/full							fields - posts: others
-	GET			/v1/posts/post/Post-Id
-	POST		/v1/posts/post/Post-Id/execute/{data}
+	GET			/v1/posts/post/Post-Ids					
+				e.g. http://localhost:8124/v1/posts/post/p000001,p000002
+				
+	POST		/v1/posts/post/Post-Id/execute/{data}   execute: new, update, delete
 	
+	example:
+	http://localhost:8124/v1/posts/post/fakeId/new/{"id": "p000100","title": "title","author": "author","photo": "photo","url": [],"likes": [],"serving": "","time": {},"description": "description","steps": {"text": {"whole": []},"video": {}},"elements": {"whol
 	
 	GET			/v1/elements/element/element-Ids        e.g. http://localhost:8124/v1/elements/element/e000001,e000002
 
