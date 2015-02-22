@@ -1,7 +1,7 @@
-var posts = require('./resource-actions/posts');
-var elements = require('./resource-actions/elements');
-var users = require('./resource-actions/users');
-var index = require('./resource-actions/index');
+var posts = require('./resource_actions/posts');
+var elements = require('./resource_actions/elements');
+var users = require('./resource_actions/users');
+var index = require('./resource_actions/index');
 
 var handles = {};
 handles['/'] = index.handle;
