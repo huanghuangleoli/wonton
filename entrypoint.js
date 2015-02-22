@@ -3,7 +3,7 @@ var router = require('./router');
 var requestHandlers = require('./requestHandlers');
 var database = require('./database');
 
-var portNum = 8124;
+var portNum = 3000;
 
 function onStart(db) {
   server.start(router.route, requestHandlers.handles, portNum, db);
