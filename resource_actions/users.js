@@ -19,7 +19,7 @@ function handle(request, query, response, db) {
         var filter = {'id': {'$in': ids}};
         db.collection('users').find(filter, {}).toArray(function(err, item) {
           if (item == null) {
-            erros.write(response, 'GET', 'cannot find user id ' + query.id);
+            errors.write(response, 'GET', 'cannot find user id ' + query.id);
           } else {
             console.log('GET users id ' + query.id);
             response.writeHead(200, {'Content-Type': 'application/json'});
@@ -87,7 +87,7 @@ function handle(request, query, response, db) {
       }
       break;
     default:
-      erros.write(response, request.method, 'not supported');
+      errors.write(response, request.method, 'not supported');
   }
 }
 

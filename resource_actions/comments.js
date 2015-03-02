@@ -102,7 +102,7 @@ function handle(request, query, response, db) {
           });
       break;
     default:
-      erros.write(response, request.method, 'not supported');
+      errors.write(response, request.method, 'not supported');
   }
 }
 

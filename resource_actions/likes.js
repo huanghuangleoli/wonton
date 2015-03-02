@@ -12,34 +12,19 @@ function handle(request, query, response, db) {
   switch (request.method) {
     case 'POST':
       if (query.postid == null) {
-        erros.write(response, 'POST', 'requires postid');
+        errors.write(response, 'POST', 'requires postid');
         break;
       }
       if (query.userid == null) {
-        erros.write(response, 'POST', 'requires userid');
+        errors.write(response, 'POST', 'requires userid');
         break;
       }
-      // like
+      // unlike
       if (query.unlike != null){
         if (query.unlike != 'true') {
-          erros.write(response, 'POST', 'only supports unlike=true');
+          errors.write(response, 'POST', 'only supports unlike=true');
           break;
         }
-        db.collection('posts').update(
-            { id: query.postid },
-            { $inc: { liked_num: 1 }}
-            , function (err, result) {
-              db.collection('users').update(
-                  { id: query.userid },
-                  { $addToSet: { liked_posts: { "post": query.postid }}}
-                  , function (err, result) {
-                    response.writeHead(200, {'Content-Type': 'text/plain'});
-                    response.end();
-                  });
-            });
-      }
-      // unlike
-      else {
         db.collection('posts').update(
             { id: query.postid },
             { $inc: { liked_num: -1 }}
@@ -53,9 +38,24 @@ function handle(request, query, response, db) {
                   });
             });
       }
+      // like
+      else {
+        db.collection('posts').update(
+            { id: query.postid },
+            { $inc: { liked_num: 1 }}
+            , function (err, result) {
+              db.collection('users').update(
+                  { id: query.userid },
+                  { $addToSet: { liked_posts: { "post": query.postid }}}
+                  , function (err, result) {
+                    response.writeHead(200, {'Content-Type': 'text/plain'});
+                    response.end();
+                  });
+            });
+      }
       break;
     default:
-      erros.write(response, request.method, 'not supported');
+      errors.write(response, request.method, 'not supported');
   }
 }
 

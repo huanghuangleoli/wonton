@@ -22,7 +22,7 @@ function handle(request, query, response, db) {
         if (query.id != null) {
           db.collection('posts').findOne({'id': query.id}, function (err, item) {
             if (item == null) {
-              erros.write(response, 'GET', 'post id ' + query.id + ' not found');
+              errors.write(response, 'GET', 'post id ' + query.id + ' not found');
             } else {
               console.log('GET posts id ' + query.id);
               response.writeHead(200, {'Content-Type': 'application/json'});
@@ -99,7 +99,7 @@ function handle(request, query, response, db) {
     case 'PUT':
       // PUT /posts?id=123
       if (query.id == null) {
-        erros.write(response, 'PUT', 'requires id');
+        errors.write(response, 'PUT', 'requires id');
       } else {
         var body = '';
         var dataCount = 0;
@@ -124,7 +124,7 @@ function handle(request, query, response, db) {
     case 'DELETE':
       // DELETE /posts?id=123
       if (query.id == null) {
-        erros.write(response, 'DELETE', 'requires id');
+        errors.write(response, 'DELETE', 'requires id');
       } else {
         db.collection('posts').remove({'id': query.id}, {justOne: true, w: 0});
         console.log('delete post id ' + query.id);
@@ -133,7 +133,7 @@ function handle(request, query, response, db) {
       }
       break;
     default:
-      erros.write(response, request.method, 'not supported');
+      errors.write(response, request.method, 'not supported');
   }
 }
 
