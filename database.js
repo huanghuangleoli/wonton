@@ -57,6 +57,18 @@ function clearDB(dbname) {
         }
       });
     });
+    //db.dropCollection('comments', function(err, result) {
+    //  db.collectionNames('comments', function(err, names) {
+    //    assert.equal(0, names.length);
+    //    console.log('collection comments is cleared.');
+    //    if (futuredone < 2) {
+    //      futuredone++;
+    //    } else {
+    //      db.close();
+    //      mongoClient.close();
+    //    }
+    //  });
+    //});
   });
 }
 
@@ -84,7 +96,7 @@ function loadFromJsonFile(dbname) {
         }
       }
       console.log('Loaded json file to db ' + dbname);
-      if (futuredone  < 2) {
+      if (futuredone  < 3) {
         futuredone++;
       } else {
         db.close();
@@ -108,7 +120,7 @@ function loadFromJsonFile(dbname) {
         }
       }
       console.log('Loaded json file to db ' + dbname);
-      if (futuredone  < 2) {
+      if (futuredone  < 3) {
         futuredone++;
       } else {
         db.close();
@@ -132,7 +144,31 @@ function loadFromJsonFile(dbname) {
         }
       }
       console.log('Loaded json file to db ' + dbname);
-      if (futuredone < 2) {
+      if (futuredone < 3) {
+        futuredone++;
+      } else {
+        db.close();
+        mongoClient.close();
+      }
+    });
+    db.createCollection('comments', {
+      strict: true,
+      capped: false,
+      size: 5242880,
+      autoIndexId: true,
+      w: 1
+    }, function (err, collection) {
+      if (err) {
+        console.log(err);
+      } else {
+        var parsedJSON = require('./data/comments.json');
+        for (var i = 0; i < parsedJSON.length; i++) {
+          collection.insert(parsedJSON[i], {}, function (colerr, result) {
+          });
+        }
+      }
+      console.log('Loaded comments json file to db ' + dbname);
+      if (futuredone < 3) {
         futuredone++;
       } else {
         db.close();

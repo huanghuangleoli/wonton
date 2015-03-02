@@ -1,13 +1,21 @@
 // RESTful API for /users, returns JSON
 var qs = require('querystring');
 
+/// Supported requests
+/// GET /users?id=123,456
+/// POST /users?id=123
+/// PUT /users?id=123
+/// DELETE /users?id=123
+
 function handle(request, query, response, db) {
   response.setHeader('Content-Type', 'application/json');
   switch (request.method) {
     case 'GET':
       if (query.id != null) {
-        // GET one user
-        db.collection('users').findOne({'id': query.id}, function(err, item) {
+        // GET /users?id=123,456
+        var ids = query.id.split(',');
+        var filter = {'id': {'$in': ids}};
+        db.collection('users').find(filter, {}).toArray(function(err, item) {
           if (item == null) {
             console.log('GET users id = ' + query.id + ' not found');
             response.end();
@@ -15,13 +23,6 @@ function handle(request, query, response, db) {
             console.log('GET users id ' + query.id);
             response.end(JSON.stringify(item));
           }
-        });
-      } else {
-        // GET all users
-        db.collection('users').find().toArray(function(err, items) {
-          var json = {'items': items};
-          console.log('return all users');
-          response.end(JSON.stringify(json));
         });
       }
       break;
@@ -31,6 +32,7 @@ function handle(request, query, response, db) {
         response.end();
         break;
       }
+      // POST /users?id=123
       db.collection('users').findOne({'id': query.id}, function(err, item) {
         if (item != null) {
           console.log('users id ' + query.id + ' already exists');
@@ -62,6 +64,7 @@ function handle(request, query, response, db) {
         console.log('PUT w/o id');
         response.end();
       } else {
+        // PT /users?id=123
         var body = '';
         var dataCount = 0;
         request.on('data', function (data) {
@@ -86,13 +89,16 @@ function handle(request, query, response, db) {
         console.log('DELETE w/o id');
         response.end();
       } else {
+        // DELETE /users?id=123
         console.log('delete users id ' + query.id);
         db.collection('users').remove({'id': query.id}, {justOne: true, w: 0});
         response.end();
       }
       break;
     default:
-    // Do nothing.
+      response.writeHead(404, {'Content-Type': 'text/plain'});
+      errorjson = {'error': request.method + ' is not supported'};
+      response.end(JSON.stringify(errorjson));
   }
 }
 
