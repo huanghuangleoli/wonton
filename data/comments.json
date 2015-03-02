@@ -1,0 +1,31 @@
+[
+{
+	"postid": "foo",
+	"comments": []
+},
+
+{
+	"postid": "p000001",
+	"comments":
+	[
+		{
+			"slug": "abde-122a",
+			"content": "test comment",
+			"createBy": "u000002",
+			"createAt": "2014-11-26-03-25-21"
+		},
+		{
+			"slug": "ads1-3a12",
+			"content": "test comment",              
+			"createBy": "u000001",
+			"createAt": "2014-11-28-13-25-21"
+		},
+		{
+			"slug": "ad31-ada1",
+			"content": "test comment",              
+			"createBy": "u000005",
+			"createAt": "2014-11-29-11-25-21"
+		}
+	]
+}
+]
