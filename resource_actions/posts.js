@@ -1,41 +1,38 @@
 // RESTful API for /posts, returns JSON
 
 // TODO: support PUT
-// TODO: return 400 for invalid id
 var qs = require('querystring');
 var config = require('./config');
+var errors = require('./errors');
 
 /// Supported requests
 /// GET /posts
 /// GET /posts?offset=20
 /// GET /posts?id=123
-/// POST /posts?id=123
+/// POST /posts
 /// PUT /posts?id=123
 /// DELETE /posts?id=123
 
 var latest_post_id = 100001;
 
 function handle(request, query, response, db) {
-  response.setHeader('Content-Type', 'application/json');
   switch (request.method) {
     case 'GET':
+      // GET /posts?id=123
         if (query.id != null) {
-          // GET /posts?id=123
           db.collection('posts').findOne({'id': query.id}, function (err, item) {
             if (item == null) {
-              console.log('GET post id = ' + query.id + ' not found');
-              response.writeHead(404, {'Content-Type': 'text/plain'});
-              errorjson = {'error': 'cannot find this post id'};
-              response.end(JSON.stringify(errorjson));
+              erros.write(response, 'GET', 'post id ' + query.id + ' not found');
             } else {
-              response.writeHead(200, {'Content-Type': 'application/json'});
               console.log('GET posts id ' + query.id);
+              response.writeHead(200, {'Content-Type': 'application/json'});
               response.end(JSON.stringify(item));
             }
           });
-        } else {
-          // GET /posts
-          // GET /posts?offset=20
+        }
+      // GET /posts
+      // GET /posts?offset=20
+        else {
           var offset = 0;
           if (query.offset != null) {
             offset = query.offset;
@@ -92,21 +89,18 @@ function handle(request, query, response, db) {
           var post = qs.parse(body);
           post['id'] = 'p' + latest_post_id;
           latest_post_id++;
-          console.log('add new post id ' + query.id);
           db.collection('posts').insert(post, function (err, result) {
+            console.log('add new post');
             response.writeHead(201, {'Content-Type': 'application/json'});
             response.end(JSON.stringify(post));
           });
         });
         break;
     case 'PUT':
+      // PUT /posts?id=123
       if (query.id == null) {
-        console.log('PUT w/o id');
-        response.writeHead(404, {'Content-Type': 'text/plain'});
-        errorjson = {'error': 'cannot put without id'};
-        response.end(JSON.stringify(errorjson));
+        erros.write(response, 'PUT', 'requires id');
       } else {
-        // PUT /posts?id=123
         var body = '';
         var dataCount = 0;
         request.on('data', function (data) {
@@ -120,28 +114,26 @@ function handle(request, query, response, db) {
         request.on('end', function () {
           var post = qs.parse(body);
           post['id'] = query.id;
-          console.log('upsert post id ' + query.id);
           db.collection('posts').update({'id': query.id}, post, {upsert: true, w: 0});
+          console.log('upsert post id ' + query.id);
           response.writeHead(200, {'Content-Type': 'application/json'});
           response.end(JSON.stringify(post));
         });
       }
       break;
     case 'DELETE':
+      // DELETE /posts?id=123
       if (query.id == null) {
-        response.writeHead(404, {'Content-Type': 'text/plain'});
-        errorjson = {'error': 'cannot delete without post id'};
-        response.end(JSON.stringify(errorjson));
+        erros.write(response, 'DELETE', 'requires id');
       } else {
-        // DELETE /posts?id=123
-        console.log('delete post id ' + query.id);
         db.collection('posts').remove({'id': query.id}, {justOne: true, w: 0});
+        console.log('delete post id ' + query.id);
         response.writeHead(200, {'Content-Type': 'application/json'});
         response.end();
       }
       break;
     default:
-      // Do nothing.
+      erros.write(response, request.method, 'not supported');
   }
 }
 

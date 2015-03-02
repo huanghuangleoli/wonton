@@ -15,7 +15,8 @@
 	"post": [],
 	"like": [],
 	"follow": [],
-    "purchase": []
+    "purchase": [],
+    "liked_posts": []
 },
 
 {
@@ -33,7 +34,8 @@
 	"post": [],
     "like": [],
 	"follow": [],
-    "purchase": []
+    "purchase": [],
+    "liked_posts": []
 },
 
 {
@@ -51,7 +53,8 @@
 	"post": [],
     "like": [],
 	"follow": [],
-    "purchase": []
+    "purchase": [],
+    "liked_posts": []
 },
 
 {
@@ -69,7 +72,8 @@
 	"post": [],
     "like": [],
 	"follow": [],
-    "purchase": []
+    "purchase": [],
+    "liked_posts": []
 }
 
 

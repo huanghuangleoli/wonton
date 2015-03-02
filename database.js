@@ -25,7 +25,7 @@ function clearDB(dbname) {
       db.collectionNames('posts', function(err, names) {
         assert.equal(0, names.length);
         console.log('collection posts is cleared.');
-        if (futuredone < 2) {
+        if (futuredone < 3) {
           futuredone++;
         } else {
           db.close();
@@ -37,7 +37,7 @@ function clearDB(dbname) {
       db.collectionNames('elements', function(err, names) {
         assert.equal(0, names.length);
         console.log('collection elements is cleared.');
-        if (futuredone < 2) {
+        if (futuredone < 3) {
           futuredone++;
         } else {
           db.close();
@@ -49,7 +49,7 @@ function clearDB(dbname) {
       db.collectionNames('users', function(err, names) {
         assert.equal(0, names.length);
         console.log('collection users is cleared.');
-        if (futuredone < 2) {
+        if (futuredone < 3) {
           futuredone++;
         } else {
           db.close();
@@ -57,18 +57,18 @@ function clearDB(dbname) {
         }
       });
     });
-    //db.dropCollection('comments', function(err, result) {
-    //  db.collectionNames('comments', function(err, names) {
-    //    assert.equal(0, names.length);
-    //    console.log('collection comments is cleared.');
-    //    if (futuredone < 2) {
-    //      futuredone++;
-    //    } else {
-    //      db.close();
-    //      mongoClient.close();
-    //    }
-    //  });
-    //});
+    db.dropCollection('comments', function(err, result) {
+      db.collectionNames('comments', function(err, names) {
+        assert.equal(0, names.length);
+        console.log('collection comments is cleared.');
+        if (futuredone < 3) {
+          futuredone++;
+        } else {
+          db.close();
+          mongoClient.close();
+        }
+      });
+    });
   });
 }
 

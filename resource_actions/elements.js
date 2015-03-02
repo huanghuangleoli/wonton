@@ -1,6 +1,7 @@
 // RESTful API for /elements, returns JSON
 var qs = require('querystring');
 var config = require('./config');
+var errors = require('./errors');
 
 /// Supported requests
 /// GET /elements
@@ -13,25 +14,24 @@ var config = require('./config');
 var latest_element_id = 100001;
 
 function handle(request, query, response, db) {
-  response.setHeader('Content-Type', 'application/json');
   switch (request.method) {
     case 'GET':
+      // GET /elements?id=123,456
       if (query.id != null) {
-        // GET /elements?id=123,456
         var ids = query.id.split(',');
         var filter = {'id': {'$in': ids}};
         db.collection('elements').find(filter, {}).toArray(function(err, item) {
           if (item == null) {
-            console.log('GET elements id = ' + query.id + ' not found');
-            response.end();
+            errors.write(response, 'GET', 'elements id ' + query.id + ' not found');
           } else {
             console.log('GET elements id ' + query.id);
             response.end(JSON.stringify(item));
           }
         });
-      } else {
-        // GET /elements
-        // GET /elements?offset=20
+      }
+      // GET /elements
+      // GET /elements?offset=20
+      else {
         var offset = 0;
         if (query.offset != null) {
           offset = query.offset;
@@ -66,18 +66,17 @@ function handle(request, query, response, db) {
         var post = qs.parse(body);
         post['id'] = 'e' + latest_element_id.toString();
         latest_element_id++;
-        console.log('add new post id');
         db.collection('elements').insert(post, function (err, result) {
+          console.log('added new post');
           response.end(JSON.stringify(post));
         });
       });
       break;
     case 'PUT':
+      // PUT /elements?id=123
       if (query.id == null) {
-        console.log('PUT w/o id');
-        response.end();
+        errors.write(response, 'PUT', 'requires id');
       } else {
-        // PUT /elements?id=123
         var body = '';
         var dataCount = 0;
         request.on('data', function (data) {
@@ -91,27 +90,24 @@ function handle(request, query, response, db) {
         request.on('end', function () {
           var post = qs.parse(body);
           post['id'] = query.id;
-          console.log('upsert elements id ' + query.id);
           db.collection('elements').update({'id': query.id}, post, {upsert: true, w: 0});
+          console.log('upserted elements id ' + query.id);
           response.end(JSON.stringify(post));
         });
       }
       break;
     case 'DELETE':
+      // DELETE /elements?id=123
       if (query.id == null) {
-        console.log('DELETE w/o id');
-        response.end();
+        errors.write(response, 'DELETE', 'requires id');
       } else {
-        // DELETE /elements?id=123
-        console.log('delete elements id ' + query.id);
         db.collection('elements').remove({'id': query.id}, {justOne: true, w: 0});
+        console.log('deleted elements id ' + query.id);
         response.end();
       }
       break;
     default:
-      response.writeHead(404, {'Content-Type': 'text/plain'});
-      errorjson = {'error': request.method + ' is not supported'};
-      response.end(JSON.stringify(errorjson));
+      errors.write(response, request.method, 'not supported');
   }
 }
 
