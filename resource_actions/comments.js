@@ -18,23 +18,21 @@ function handle(request, query, response, db) {
       // GET /comments?postid=123&offset=20
       if (query.postid != null) {
         var offset = 0;
-        if (query.offset != null) offset = query.offset;
-        var filter = {'id': query.id};
-        var fields = {comments: {$slice: [offset, config.comments_get_limit]}};
+        if (query.offset != null) {
+          offset = parseInt(query.offset);
+        }
+        var filter = { 'postid': query.postid };
+        var fields = { comments: { $slice: [offset, config.comments_get_limit] }};
         db.collection('comments').find(filter, fields).toArray(function (err, item) {
           if (item == null || item.length == 0) {
-            response.writeHead(404, {'Content-Type': 'text/plain'});
-            errorjson = {'error': 'GET comments postid = ' + query.postid + ' not found'};
-            response.end(JSON.stringify(errorjson));
+            errors.write(response, 'GET', 'postid ' + query.postid + ' not found');
           } else {
             console.log('GET comments postid ' + query.postid);
             response.end(JSON.stringify(item));
           }
         });
       } else {
-        response.writeHead(404, {'Content-Type': 'text/plain'});
-        errorjson = {'error': 'cannot GET comments without postid'};
-        response.end(JSON.stringify(errorjson));
+        errors.write(response, 'GET', 'requires postid');
       }
       break;
     case 'POST':
@@ -59,9 +57,9 @@ function handle(request, query, response, db) {
           });
           request.on('end', function () {
             var comment = qs.parse(body);
-            comment['createAt'] = 'time now';
+            comment['createAt'] = 'time-now';
             comment['createBy'] = 'currentuser';
-            comment['slug'] = 'my slug';
+            comment['slug'] = 'my-slug';
             console.log('add new comment');
             db.collection('comments').update(
                 { postid: query.postid },
@@ -89,12 +87,8 @@ function handle(request, query, response, db) {
       }
       db.collection('comments').update(
           { postid: query.postid },
-          { $pull: { comments:
-              {
-                createAt: query.createAt,
-                slug: query.slug
-              }
-          }},
+          { $pull: { comments: { createAt: query.createAt, slug: query.slug }}},
+          { multi: true },
           function (err, result) {
             console.log('deleted comment from post id ' + query.postid);
             response.writeHead(200, {'Content-Type': 'text/plain'});

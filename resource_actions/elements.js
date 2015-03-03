@@ -34,7 +34,7 @@ function handle(request, query, response, db) {
       else {
         var offset = 0;
         if (query.offset != null) {
-          offset = query.offset;
+          offset = parseInt(query.offset);
         }
         var filter1 = {};
         var fields1 = { _id: 0 };

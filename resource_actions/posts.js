@@ -9,6 +9,7 @@ var errors = require('./errors');
 /// GET /posts
 /// GET /posts?offset=20
 /// GET /posts?id=123
+/// GET /posts?likedByUserId=123&offset=20
 /// POST /posts
 /// PUT /posts?id=123
 /// DELETE /posts?id=123
@@ -18,7 +19,7 @@ var latest_post_id = 100001;
 function handle(request, query, response, db) {
   switch (request.method) {
     case 'GET':
-      // GET /posts?id=123
+        // GET /posts?id=123
         if (query.id != null) {
           db.collection('posts').findOne({'id': query.id}, function (err, item) {
             if (item == null) {
@@ -30,15 +31,54 @@ function handle(request, query, response, db) {
             }
           });
         }
-      // GET /posts
-      // GET /posts?offset=20
+        // GET /posts?likedByUserId=123&offset=20
+        else if(query.likedByUserId != null) {
+          db.collection('users').find(
+              { id: query.likedByUserId },
+              { liked_posts: 1 }).toArray(function (err, items) {
+                if (items == null || items.length == 0 ||
+                    items[0].liked_posts == null || items[0].liked_posts.length == 0) {
+                  // no liked post
+                  response.writeHead(200, {'Content-Type': 'text/plain'});
+                  response.end();
+                } else {
+                  var postids = [];
+                  items[0].liked_posts.forEach(function(item) {
+                    postids.push(item['post']);
+                  });
+                  var offset = 0;
+                  if (query.offset != null) {
+                    offset = parseInt(query.offset);
+                  }
+                  db.collection('posts')
+                      .find(
+                          { id: {$in: postids} },
+                          { _id : 0 })
+                      .sort({'create.on': -1})
+                      .skip(offset)
+                      .limit(config.posts_get_limit)
+                      .toArray(function (err, postItems) {
+                        var json = {'items': postItems};
+                        console.log('return post list');
+                        response.writeHead(200, {'Content-Type': 'application/json'});
+                        response.end(JSON.stringify(json));
+                      });
+                }
+              });
+        }
+        // GET /posts
+        // GET /posts?offset=20
+        // GET /posts?category=foo
         else {
           var offset = 0;
           if (query.offset != null) {
-            offset = query.offset;
+            offset = parseInt(query.offset);
           }
           // TODO: move to config.js
           var filter_for_posts = {};
+          if (query.category != null) {
+            filter_for_posts = { 'category': query.category };
+          }
           var fields_for_posts = { _id: 0 };
           var fields_for_users = {
             id: 1,
@@ -49,9 +89,9 @@ function handle(request, query, response, db) {
           };
           db.collection('posts')
               .find(filter_for_posts, fields_for_posts)
-              .limit(config.posts_get_limit)
               .sort({'create.on': -1})
               .skip(offset)
+              .limit(config.posts_get_limit)
               .toArray(function(err, items) {
                 var createByIds = items.map(function (item) {
                   return item.create.by;
